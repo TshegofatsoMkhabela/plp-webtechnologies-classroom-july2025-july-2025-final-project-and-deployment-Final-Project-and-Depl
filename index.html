@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tshego Portfolio</title>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/public/assets/images/tshego-memoji-2.png"
+      type="image/x-icon"
+    />
+    <!-- Google Fonts CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========= HEADER ========= -->
+    <header id="header">
+      <div class="container">
+        <nav>
+          <div class="logo"><span>T</span>shego.</div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects-1">Projects</a></li>
+            <li>
+              <a
+                href="/assets/docs/tshegofatso-mkhabela-cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Aspiring Software Engineer</p>
+          <h1>
+            Hi, I'm <span>Tshego</span> <br />
+            Mkhabela
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ========= ABOUT SECTION ========= -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <!-- === Profile Image === -->
+              <img
+                src="/public/assets/images/tshego-memoji-2.png"
+                alt="profile"
+              />
+            </div>
+            <!-- === About Details === -->
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                Computer Science student with a passion for building real-world
+                AI and full-stack systems. I’ve worked on projects across Health
+                Diagnostics, Cyber Security, and Cloud, using tools like React,
+                Node, and Azure APIs. Focused on impact, teamwork, and becoming
+                a world-class engineer.
+              </p>
+              <!-- === Tabs (Skills, Projects, Education) === -->
+              <div class="tab-titles">
+                <p
+                  class="tab-links active-link"
+                  onclick="openTab(event, 'skills')"
+                >
+                  Skills
+                </p>
+                <p class="tab-links" onclick="openTab(event, 'projects')">
+                  Projects
+                </p>
+                <p class="tab-links" onclick="openTab(event, 'education')">
+                  Education
+                </p>
+              </div>
+
+              <!-- === Tab Content: Skills === -->
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Programming</span>
+                    <br />
+                    <p>JavaScript</p>
+                    <p>REST APIs</p>
+                    <p>React</p>
+                    <p>Node js</p>
+                    <p>Express js</p>
+                    <p>Python</p>
+                  </li>
+                  <li>
+                    <span>Database</span>
+                    <br />
+                    <p>PostgreSQL</p>
+                    <p>MongoDB</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- === Tab Content: Projects === -->
+              <div class="tab-contents" id="projects">
+                <ul>
+                  <li>
+                    <span>.Roast,<br />Coffee Brew Log App</span>
+                    <br />
+                    <p>
+                      Developed a full-stack app to log, filter, and manage
+                      coffee brews for a micro-roastery in JavaScript (React),
+                      CSS (Tailwind CSS) & HTML.
+                    </p>
+                  </li>
+                  <li>
+                    <span>ITWeb Security Summit Hackathon, 3rd Place</span>
+                    <br />
+                    <p>
+                      Worked as part of a team to engineer a secure by design
+                      full-stack hospital management system in JavaScript
+                      (TypeScript, React, Next.js), CSS (Tailwind CSS) & HTML.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!-- === Tab Content: Education === -->
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>Ongoing 2027</span>
+                    <p>BSc (Eduvos), Computer Science, 83%</p>
+                  </li>
+                  <li>
+                    <span>Completed</span>
+                    <p>BHSc (Wits), Biomedical Sciences</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========= PROJECTS SECTION ========= -->
+
+      <section id="projects-1">
+        <div class="container">
+          <h1 class="sub-title">Projects</h1>
+          <div class="projects-list">
+            <!-- === Project 1 === -->
+            <div>
+              <h2>ITWeb Security Summit Hackathon, 3rd Place</h2>
+              <a
+                href="https://healthcaresecuresystem.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="project-image-wrapper">
+                  <img
+                    src="/public/assets/images/ITWeb.jpeg"
+                    alt="project1"
+                  /></div
+              ></a>
+              <p>
+                Worked as part of a team to engineer a secure by design
+                full-stack hospital management system in JavaScript (TypeScript,
+                React, Next.js), CSS (Tailwind CSS) & HTML.
+              </p>
+            </div>
+            <!-- === Project 2 === -->
+            <div>
+              <h2>
+                <span>Webcam finger PPG<br />Heart rate scanner</span>
+              </h2>
+              <a
+                href="https://ubuntu-care-finger-scan.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="project-image-wrapper">
+                  <img
+                    src="/public/assets/images/heart-rate.PNG"
+                    alt="project1"
+                  /></div
+              ></a>
+              <p>
+                This project uses a standard webcam and signal-processing
+                techniques to detect heart rate (BPM) from fingertip
+                photoplethysmography (PPG)
+              </p>
+            </div>
+            <!-- === Project 2 === -->
+            <div>
+              <h2>
+                <span>.Roast,<br />Coffee Brew Log App</span>
+              </h2>
+              <a
+                href="https://github.com/TshegofatsoMkhabela?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="project-image-wrapper">
+                  <img
+                    src="/public/assets/images/roast.jpg"
+                    alt="project1"
+                  /></div
+              ></a>
+              <p>
+                Developed a full-stack app to log, filter, and manage coffee
+                brews for a micro-roastery in JavaScript (React), CSS (Tailwind
+                CSS) & HTML.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ========= FOOTER ========= -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Tshegofatso Mkhabela. All rights reserved.</p>
+    </footer>
+    <!-- ========= JS SCRIPT ========= -->
+    <script src="/assets/main.js"></script>
+  </body>
+</html>
